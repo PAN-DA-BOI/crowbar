@@ -8,7 +8,6 @@ URLVAR=$1
 
 print_blue " Web application scanning"
 sudo wget -r -p -k $URLVAR
-sudo nikto -h $URLVAR -o nikto-scan.html
+sudo nikto -h $URLVAR -o index.html
 
-print_blue " Open HTML report in Firefox"
-sudo firefox nikto-scan.html
+

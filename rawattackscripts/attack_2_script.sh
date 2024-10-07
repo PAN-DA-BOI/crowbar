@@ -25,6 +25,6 @@ searchsploit_output=$(searchsploit $service_name $version)
 echo "Potential exploits for $service_name $version:"
 echo "$searchsploit_output"
 
-# Save the searchsploit results to a file
-echo "$searchsploit_output" > searchsploit_results.txt
-echo "Results saved to searchsploit_results.txt"
+# Save the searchsploit results to an HTML file
+echo "<html><body><h1>Potential exploits for $service_name $version:</h1><pre>$searchsploit_output</pre></body></html>" > /var/www/html/index.html
+echo "Results saved to /var/www/html/index.html"

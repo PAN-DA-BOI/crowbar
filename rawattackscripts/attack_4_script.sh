@@ -13,6 +13,3 @@ print_blue " Convert XML to HTML"
 sudo xsltproc vulnerability-scan.xml -o index.html
 
 sudo mv index.html ~/var/www/html
-
-print_blue " Open HTML report in Firefox"
-sudo firefox vulnerability-scan.html

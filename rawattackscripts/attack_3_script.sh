@@ -14,5 +14,3 @@ sudo xsltproc port-scan.xml -o index.html
 
 sudo mv index.html ~/var/www/html
 
-print_blue " Open HTML report in Firefox"
-sudo firefox port-scan.html
