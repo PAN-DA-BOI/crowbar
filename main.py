@@ -53,6 +53,9 @@ def attack_page_2():
     attack_button(root, 'START ATTACK', colors[1], './rawattackscripts/attack_2_script.sh')
     button(root, 'about this Attack', colors[1], about_attack_2_script)
     button(root, 'Back to Attacks', colors[2], attacks_page)
+    ip = socket.gethostbyname(socket.gethostname())
+    ip_label = tk.Label(root, text=f'IP: {ip}', bg=colors[0], fg=colors[3])
+    ip_label.pack(fill='x')
 def attack_page_3():
     page(root, colors[0], colors[1])
     titleLabel = tk.Label(root, text='Port scanning', font=('Arial', 25), bg=colors[0], fg=colors[3])

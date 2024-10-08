@@ -40,34 +40,34 @@ r5 = gpio.16
 
 if c1 == high:
     if r1 == high:
-        sendkey = "1"
+        sendkey('1')
     elif r2 == high:
-        sendkey = "4"
+        sendkey('4')
     elif r3 == high:
-        sendkey = "7"
+        sendkey('7')
     elif r4 == high:
-        sendkey = "0"
+        sendkey('0')
     elif r5 == high:
-        sendkey = "↑"
+        sendkey('↑')
 if c2 == high:
     if r1 == high:
-        sendkey = "2"
+        sendkey('2')
     elif r2 == high
-        sendkey = "5"
+        sendkey('5')
     elif r3 == high:
-        sendkey = "8"
+        sendkey('8')
     elif r4 == high:
-        sendkey = "*"
+        sendkey('*')
     elif r5 == high:
         sendkey = enter
 if c3 == high:
     if r1 == high:
-        sendkey = "3"
+        sendkey('3')
     elif r2 == high:
-        sendkey = "6"
+        sendkey('6')
     elif r3 == high:
-        sendkey = "9"
+        sendkey('9')
     elif r4 == high:
-        sendkey = "."
+        sendkey('.')
     elif r5 == high:
-        sendkey = "↓"
+        sendkey('↓')
