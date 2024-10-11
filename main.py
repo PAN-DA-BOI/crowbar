@@ -278,6 +278,7 @@ def disguises_page():
     button(root, 'ice', '#ABA9C3', lambda: change_colors(['#FCF7F8', '#ABA9C3', '#CED3DC', '#222725']))
     button(root, 'terran', '#F2DD6E', lambda: change_colors(['#000000', '#F2DD6E', '#FFE641', '#7A7A7A']))
     button(root, 'murc', '#7A7E6F', lambda: change_colors(['#92694C', '#7A7E6F', '#736C68', '#D3C3C4']))
+    button(root, 'loud', '#69F970', lambda: change_colors(['#009DDC', '#69F970', '#F00699', '#54428E']))
     button(root, 'Back to Main Menu', colors[2], main_menu)
 
 def change_colors(new_colors):
