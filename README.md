@@ -1,6 +1,6 @@
 # crowbar
 Project Crowbar is my piece de resistance for high school, it's a pen-testing device made from a Raspberry Pi
-to get everything started and set up Kali for Raspberry Pi. Then, get this GitHub downloaded, and use the set-up script.sh
+to get everything started, set up Kali for Raspberry Pi. Then, get this GitHub repo downloaded, and use the set-up script.sh
 in the Raspberry Pi's terminal type the following commands
 
 ```
