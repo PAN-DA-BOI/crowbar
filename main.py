@@ -180,7 +180,7 @@ def about_page():
     page(root, colors[0], colors[1])
     label = tk.Label(root, text='this tool was made by Brody Evans\n to pentest servers, routers, \ncomputers, and more',font=('Arial', 14), bg=colors[0], fg=colors[3])
     label.pack(fill='x')
-    label = tk.Label(root, text='CONTACT\n\nemail : brodyevans82Gmail.com\nphone : +1-385-235-1339\ngithub: PAN-DA-BOI\n\nSoftware Version 1.8.12', bg=colors[0], fg=colors[3], justify='left')
+    label = tk.Label(root, text='CONTACT\n\nemail : brodyevans82Gmail.com\ngithub: PAN-DA-BOI\n\nSoftware Version 1.8.12', bg=colors[0], fg=colors[3], justify='left')
     label.pack(fill='x')
     button(root, 'Back to Main Menu', colors[2], main_menu)
     
