@@ -4,7 +4,7 @@ to get everything started, set up Kali for Raspberry Pi. Then, get this GitHub r
 in the Raspberry Pi's terminal type the following commands
 
 ```
-git clone https://github.com/PAN*DA*BOI/crowbar.git
+git clone https://github.com/PAN-DA-BOI/crowbar.git
 cd crowbar
 chmod +x ./setup*script.sh
 ./setup*script.sh
