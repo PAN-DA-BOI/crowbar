@@ -152,38 +152,6 @@ def attack_page_10():
     ip = socket.gethostbyname(socket.gethostname())
     ip_label = tk.Label(root, text=f'IP: {ip}', bg=colors[0], fg=colors[3])
     ip_label.pack(fill='x')
-    
-
-def quit_page():
-    page(root, colors[0], colors[1])
-    label = tk.Label(root, text='Are you sure you want to quit?', bg=colors[0], fg=colors[3])
-    label.pack(fill='x')
-    button(root, 'Confirm Quit', 'red', root.destroy)
-    button(root, 'Return to Main Menu', colors[2], main_menu)
-    
-def attacks_page():
-    page(root, colors[0], colors[1])
-    button(root, 'NMAP webpage', colors[1], attack_page_1)
-    button(root, 'Searchsploit', colors[1], attack_page_2)
-    button(root, 'Port scanning', colors[1], attack_page_3)
-    button(root, 'Vulnerability scanning', colors[1], attack_page_4)
-    button(root, 'Web application scanning', colors[1], attack_page_5)
-    button(root, 'Password cracking', colors[1], attack_page_6)
-    button(root, 'SQL injection', colors[1], attack_page_7)
-    button(root, 'Directory brute forcing', colors[1], attack_page_8)
-    button(root, 'Wireless network scanning', colors[1], attack_page_9)
-    button(root, 'Password policy testing', colors[1], attack_page_10)
-    button(root, 'Back to Main Menu', colors[2], main_menu)
-
-
-def about_page():
-    page(root, colors[0], colors[1])
-    label = tk.Label(root, text='this tool was made by Brody Evans\n to pentest servers, routers, \ncomputers, and more',font=('Arial', 14), bg=colors[0], fg=colors[3])
-    label.pack(fill='x')
-    label = tk.Label(root, text='CONTACT\n\nemail : brodyevans82Gmail.com\ngithub: PAN-DA-BOI\n\nSoftware Version 1.8.12', bg=colors[0], fg=colors[3], justify='left')
-    label.pack(fill='x')
-    button(root, 'Back to Main Menu', colors[2], main_menu)
-    
 def about_attack_1_script():
     page(root, colors[0], colors[1])
     label = tk.Label(root, text='Network Scan',font=('Arial', 14), bg=colors[0], fg=colors[3])
@@ -263,6 +231,38 @@ def about_attack_10_script():
     label = tk.Label(root, text='The password policy testing script uses the ncrack tool to test the password policy of a target system. The script uses the -U option to specify the username, the -P option to specify the password list (/usr/share/wordlists/rockyou.txt), and the target URL. The results of the test are displayed in HTML format and saved to the /var/www/html/index.html file, which can be viewed in a web browser by the operator. The password policy testing can help to identify weak or insecure password policies on the target system, which can be used to gain unauthorized access or to identify areas for improvement.', bg=colors[0], fg=colors[3], wraplength=300, justify='left')
     label.pack(fill='x')
     button(root, 'back to attack', colors[1], attack_page_10)
+    
+
+def quit_page():
+    page(root, colors[0], colors[1])
+    label = tk.Label(root, text='Are you sure you want to quit?', bg=colors[0], fg=colors[3])
+    label.pack(fill='x')
+    button(root, 'Confirm Quit', 'red', root.destroy)
+    button(root, 'Return to Main Menu', colors[2], main_menu)
+    
+def attacks_page():
+    page(root, colors[0], colors[1])
+    button(root, 'NMAP webpage', colors[1], attack_page_1)
+    button(root, 'Searchsploit', colors[1], attack_page_2)
+    button(root, 'Port scanning', colors[1], attack_page_3)
+    button(root, 'Vulnerability scanning', colors[1], attack_page_4)
+    button(root, 'Web application scanning', colors[1], attack_page_5)
+    button(root, 'Password cracking', colors[1], attack_page_6)
+    button(root, 'SQL injection', colors[1], attack_page_7)
+    button(root, 'Directory brute forcing', colors[1], attack_page_8)
+    button(root, 'Wireless network scanning', colors[1], attack_page_9)
+    button(root, 'Password policy testing', colors[1], attack_page_10)
+    button(root, 'Back to Main Menu', colors[2], main_menu)
+
+
+def about_page():
+    page(root, colors[0], colors[1])
+    label = tk.Label(root, text='this tool was made by Brody Evans\n to pentest servers, routers, \ncomputers, and more',font=('Arial', 14), bg=colors[0], fg=colors[3])
+    label.pack(fill='x')
+    label = tk.Label(root, text='CONTACT\n\nemail : brodyevans82Gmail.com\ngithub: PAN-DA-BOI\n\nSoftware Version 1.8.12', bg=colors[0], fg=colors[3], justify='left')
+    label.pack(fill='x')
+    button(root, 'Back to Main Menu', colors[2], main_menu)
+    
 
     
 def disguises_page():
