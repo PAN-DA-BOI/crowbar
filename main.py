@@ -326,6 +326,6 @@ def main_menu():
 root = tk.Tk()
 #root.attributes('-fullscreen', True)
 #root.config(cursor='none')
-root.geometry('320x480')
+root.geometry('480x320')
 main_menu()
 root.mainloop()
