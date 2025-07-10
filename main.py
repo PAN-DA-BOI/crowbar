@@ -257,7 +257,7 @@ def attacks_page():
 
 def about_page():
     page(root, colors[0], colors[1])
-    label = tk.Label(root, text='this tool was made by Brody Evans\n to pentest servers, routers, \ncomputers, and more',font=('Arial', 14), bg=colors[0], fg=colors[3])
+    label = tk.Label(root, text='this tool was made by Sable Evans\n to pentest servers, routers, \ncomputers, and more',font=('Arial', 14), bg=colors[0], fg=colors[3])
     label.pack(fill='x')
     label = tk.Label(root, text='CONTACT\n\nemail : brodyevans82Gmail.com\ngithub: PAN-DA-BOI\n\nSoftware Version 1.8.12', bg=colors[0], fg=colors[3], justify='left')
     label.pack(fill='x')
@@ -295,7 +295,7 @@ def help_and_credits_page():
     label.pack(fill='x')
     label = tk.Label(root, text='credits', font=('Arial', 25), bg=colors[0], fg=colors[3])
     label.pack(fill='x')
-    label = tk.Label(root, text='made sibgle handedly by Brody Evans\n(it took a lil while tbh)', bg=colors[0], fg=colors[3], justify='left')
+    label = tk.Label(root, text='made single handedly by Sable Evans\n(it took a lil while tbh)', bg=colors[0], fg=colors[3], justify='left')
     label.pack(fill='x')
     button(root, 'Back to Main Menu', colors[2], main_menu)
 
