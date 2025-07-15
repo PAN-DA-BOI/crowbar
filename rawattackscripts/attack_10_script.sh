@@ -12,4 +12,3 @@ ncrack_output=$(sudo ncrack -U $USERVAR -P /usr/share/wordlists/rockyou.txt $URL
 
 # Save the ncrack results to an HTML file
 echo "<html><body><h1>Password policy testing results:</h1><pre>$ncrack_output</pre></body></html>" > /var/www/html/index.html
-echo "Results saved to /var/www/html/index.html"
