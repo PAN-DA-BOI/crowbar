@@ -6,8 +6,8 @@ in the Raspberry Pi's terminal type the following commands
 ```
 git clone https://github.com/PAN-DA-BOI/crowbar.git
 cd crowbar
-chmod +x ./setup-script.sh
-./setup*script.sh
+chmod +x ./setup.sh
+./setup.sh
 ```
 
 the pi should reboot and everything will be set up and ready to go
