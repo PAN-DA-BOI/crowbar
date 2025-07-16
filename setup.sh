@@ -8,18 +8,8 @@ print_blue "Update package lists"
 sudo apt-get update
 sudo apt-get upgrade -y
 
-print_blue "Install Python"
-sudo apt-get install -y python3.6
-wget http://pypi.python.org/packages/source/R/RPi.GPIO/RPi.GPIO-0.5.3a.tar.gz
-tar xvzf RPi.GPIO-0.5.3a.tar.gz
-cd RPi.GPIO-0.5.3a
-sudo python3 setup.py install
-cd ..
-rm -rf RPi.GPIO-0.5.3a
-rm RPi.GPIO-0.5.3a.tar.gz
-
 print_blue "Install necessary tools"
-sudo apt-get install -y nmap xsltproc hashcat sqlmap dirb ncrack exploitdb
+sudo apt-get install -y nmap xsltproc hashcat sqlmap dirb ncrack exploitdb python3
 
 print_blue "Install Apache2"
 sudo apt-get install -y apache2
@@ -66,12 +56,24 @@ sudo sed -i 's/^ChallengeResponseAuthentication yes/ChallengeResponseAuthenticat
 print_blue "Restart SSH service"
 sudo systemctl restart ssh
 
-print_blue "Set default to multi-user mode"
-sudo systemctl set-default multi-user
-sudo systemctl set-default graphical
-
 print_blue "Remove desktop environment"
-sudo apt purge --autoremove -y xfce4* kali-desktop-xfce libxfce4*
+sudo apt purge --autoremove -y raspberrypi-ui-mods lightdm
+
+print_blue "Install necessary packages for running a Python script on boot"
+sudo apt-get install -y python3-pip xinit
+
+print_blue "Install any necessary Python packages"
+pip3 install --user <any-required-packages>
+
+print_blue "Configure main.py to run on startup"
+echo "[Desktop Entry]
+Type=Application
+Name=Main Python Script
+Exec=/usr/bin/python3 /path/to/your/main.py
+StartupNotify=false" | sudo tee /etc/xdg/autostart/main.desktop
+
+print_blue "Make the script executable"
+sudo chmod +x /etc/xdg/autostart/main.desktop
 
 print_blue "Setup completed successfully."
 print_blue "RESTARTING"
